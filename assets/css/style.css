@@ -1,0 +1,15 @@
+*, *::before, *::after {
+    font-family: inherit;
+    box-sizing: border-box;
+}
+a, a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+button:focus {
+    outline: unset;
+}
+body {
+    font-size: 16px;
+    line-height: 1.2em;
+}

@@ -734,7 +734,7 @@ section.reviews .container-wide {
 
 section.managers {
     padding-top: 325px;
-    background: url("/assets/image/bg-managers.jpg") no-repeat center/cover;
+    background: url("../image/bg-managers.jpg") no-repeat center/cover;
     color: var(--text-color-white);
 }
 .managers .section-title {
@@ -1312,7 +1312,7 @@ footer.footer {
 .select-items_cards .select-title-block {
     padding-top: 50px;
     padding-bottom: 50px;
-    background: url("/assets/image/bg-select.jpg") no-repeat center/cover;
+    background: url("../image/bg-select.jpg") no-repeat center/cover;
     margin-bottom: 50px;
 }
 .select-items_cards .section-title {
@@ -1407,6 +1407,3 @@ footer.footer {
 .select-items-block .swiper-button-next {
     right: -30px;
 }
-.select-items-block .item,
-.select-items-block .item,
-.select-items-block .item {}

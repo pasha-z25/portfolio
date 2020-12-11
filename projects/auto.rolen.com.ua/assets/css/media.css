@@ -1,0 +1,407 @@
+@media screen and (max-width: 1550px){
+    .header .nav {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .main-car {
+        max-width: 60%;
+    }
+    .main-title {
+        margin-top: 85px;
+    }
+    .delivery .broker-image {
+        max-width: 350px;
+    }
+    .calculation .wrapper {
+
+        padding: 50px 15px;
+    }
+    .select .car-image {
+        max-width: 50%;
+        bottom: -40px;
+    }
+    .contacts .list_item {
+        padding: 30px 0;
+    }
+    .header .phone-wrap {
+        width: 100%;
+    }
+    .swiper-steps.gallery-top .slide-description {
+        padding: 50px 50px 15px 50px;
+        min-height: 350px;
+    }
+    .swiper-about.gallery-top .slide-description {
+        padding: 35px 35px 25px 35px;
+    }
+    section.managers {
+        padding-top: 100px;
+    }
+    .managers .manager_1 .label {
+        left: 70%;
+    }
+    .managers .manager_2 .label {
+        right: 70%;
+    }
+    .reviews .item .car-description {
+        width: 48%;
+        padding: 25px 0 15px 25px;
+        min-height: 270px;
+    }
+    .reviews .item .car-photo {
+        width: 52%;
+    }
+    .reviews .review-text .logo {
+        padding-left: 10px;
+        padding-right: 10px;
+        min-width: 90px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .main-slide .white-block {
+        padding: 35px 25px 0 50px;
+    }
+    section.main-slide {
+        min-height: 850px;
+    }
+    section.select-auto, section.cost-info, section.why-us, section.about, section.reviews .container-wide,
+    section.faq, section.calculation, section.contacts {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    .select-auto .section-title, .why-us .section-title, .delivery .section-title, .contacts .contact-list {
+        margin-bottom: 50px;
+    }
+    section.steps-slide, section.delivery, section.select, footer.footer {
+        padding-top: 60px;
+    }
+    section.steps-slide .container-wide {
+        padding-bottom: 50px;
+    }
+    .steps-slide .section-title, .contacts .description {
+        margin-bottom: 15px;
+    }
+    .swiper-steps.gallery-top .slide-description {
+        padding: 35px 35px 15px 15px;
+    }
+    .info-table {
+        margin-bottom: 25px;
+    }
+    .swiper-about.gallery-top .slide-description {
+        padding: 35px 15px 25px 15px;
+        min-height: auto;
+    }
+    .delivery .broker-image, .contacts .map_wrap::after {
+        display: none;
+    }
+    .description-block {
+        margin-bottom: 80px;
+        padding: 40px 15px 40px 40px;
+    }
+    .calculation .wrapper {
+        padding: 50px 35px;
+    }
+    .contacts .list_item {
+        padding: 20px 0;
+    }
+    .contacts .map_wrap {
+        margin-top: 35px;
+        max-width: initial;
+    }
+    .contacts .map {
+        height: 500px;
+        filter: none;
+    }
+    .gallery-thumbs .step, .swiper-steps.gallery-top .slide-description .step, .swiper-steps.gallery-top .slide-description .title {
+        font-size: 16px;
+    }
+    .gallery-thumbs .title {
+        font-size: 12px;
+    }
+    section.contacts {
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width: 991px){
+    .select-auto .section-title, .why-us .section-title, .delivery .section-title, .contacts .contact-list {
+        margin-bottom: 35px;
+    }
+    .header .nav {
+        flex: initial;
+        padding-right: 0;
+    }
+    .header .nav .menu_item {
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .menu_link::after {
+        left: initial;
+        right: 5px;
+    }
+    .main-title {
+        font-size: 34px;
+    }
+    .main-title .bold {
+        font-size: 50px;
+    }
+    .main-subtitle {
+        font-size: 16px;
+    }
+    .main-slide .white-block {
+        padding: 25px 10px 0 25px;
+    }
+    section.main-slide {
+        min-height: 777px;
+    }
+    .section-title {
+        font-size: 26px;
+    }
+    .swiper-steps.gallery-top .swiper-slide, .swiper-about.gallery-top .swiper-slide {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+    .swiper-steps.gallery-top .image-wrap, .swiper-steps.gallery-top .slide-description,
+    .swiper-about.gallery-top .image-wrap, .swiper-about.gallery-top .slide-description {
+        width: 100%;
+    }
+    .swiper-button-next {
+        /*font-size: 0;*/
+        /*height: 0;*/
+        /*overflow: hidden;*/
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        z-index: 2;
+        color: #1f292e;
+    }
+    .swiper-button-next:after {
+        font-size: 25px;
+    }
+    .swiper-about-wrapper .swiper-button-next {
+        top: 100px;
+    }
+    .swiper-steps.gallery-top .slide-description, .swiper-about.gallery-top .slide-description {
+        margin-top: 0;
+    }
+    .swiper-steps.gallery-top .slide-description::before,
+    .swiper-about.gallery-top .slide-description::after {
+        display: none;
+    }
+    .swiper-about.gallery-thumbs {
+        position: relative;
+        width: 100%;
+    }
+    .delivery-list.second .list_item:nth-child(2n) {
+        background-color: transparent;
+    }
+    .delivery-list.second .list_item:nth-child(2n+1) {
+        background-color: rgba(250, 250, 250, 0.01);
+    }
+    body[style="overflow: hidden;"] .btn-red .text {
+        z-index: 1;
+    }
+    .managers .manager .label {
+        font-size: 12px;
+        line-height: 34px;
+    }
+}
+@media screen and (max-width: 768px){
+    .header .nav .menu_item {
+        max-width: 540px;
+    }
+    .contacts .list_item {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .contacts .map {
+        height: 370px;
+    }
+    footer.footer {
+        padding-top: 25px;
+    }
+    .footer-menu {
+        flex-direction: column;
+        margin: 10px 0 20px 0;
+    }
+    .footer-menu .menu_item {
+        padding: 5px;
+    }
+    .footer-menu .menu_link {
+        padding: 5px;
+    }
+    .footer-menu .menu_link::after {
+        display: none;
+    }
+    section.contacts {
+        padding-bottom: 0;
+    }
+    .managers .manager .label {
+        display: none;
+    }
+    .managers .manager {
+        position: initial;
+        max-width: initial;
+    }
+    .managers .description {
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width: 550px){
+    .select .car-image, .main-car {
+        display: none;
+    }
+    section.main-slide {
+        min-height: auto;
+        padding-bottom: 50px;
+    }
+    .footer::before {
+        border-bottom-width: 50px;
+        border-right-width: 50px;
+    }
+    .swiper-steps.gallery-top .slide-description .head {
+        flex-wrap: wrap;
+    }
+    .swiper-steps.gallery-top .slide-description .head .info {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .reviews .item .car-info {
+        flex-wrap: wrap;
+    }
+    .reviews .item .car-photo, .reviews .item .car-description {
+        width: 100%;
+    }
+    .reviews .item .car-photo {
+        height: 350px;
+    }
+    .reviews .item .car-description {
+        padding: 20px;
+        min-height: initial;
+    }
+    .reviews .review-text .logo {
+        min-width: 95px;
+    }
+    .faq .item .question .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .faq .item.open .answer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .description-block {
+        flex-wrap: wrap;
+    }
+    .description-block .wrap {
+        max-width: initial;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .description-block {
+        margin-bottom: 50px;
+        padding: 25px 15px 25px 20px;
+    }
+    .reviews .item .review-text {
+        align-items: flex-start;
+        padding: 25px 15px 15px 0;
+    }
+    .calculation .wrapper {
+        padding: 35px 15px;
+    }
+    .input-group, .contacts .social_wrap, .calculation .label-group {
+        flex-wrap: wrap;
+    }
+    .label.year, .label.volume {
+        width: 100%;
+    }
+    .label.year br, .label.volume br {
+        display: none;
+    }
+    .result-table .td {
+        padding: 5px 10px;
+    }
+    .social_wrap .social {
+        margin-top: 15px;
+    }
+    .delivery-list .list_item {
+        width: 320px;
+    }
+    .select-items-block .swiper-button-prev {
+        left: 0;
+        top: 50%;
+    }
+    .select-items-block .swiper-button-next {
+        right: 0;
+        top: 50%;
+    }
+    .swiper-pagination.select-items .swiper-pagination-bullet {
+        width: 35px;
+    }
+}
+@media screen and (max-width: 425px){
+    .main-title {
+        font-size: 24px;
+    }
+    .main-title .bold {
+        font-size: 36px;
+    }
+    .main-subtitle {
+        font-size: 14px;
+    }
+    .main-slide .white-block {
+        padding: 20px 10px 0 20px;
+    }
+    .white-block .title {
+        font-size: 16px;
+    }
+    .section-title {
+        font-size: 20px;
+    }
+    .info-table .tr .td {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .why-us .item {
+        min-height: 230px;
+        padding: 15px;
+    }
+    .swiper-about.gallery-top .slide-description .title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .description-block .title {
+        font-size: 16px;
+    }
+    .description-block .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+        .reviews .item .car-photo {
+        height: 250px;
+    }
+    .calculator-form #price, .calculator-form #volume, .calculator-form #year {
+        font-size: 18px;
+    }
+    .reviews .review-text .logo {
+        padding-left: 10px;
+        padding-right: 10px;
+        min-width: 60px;
+    }
+    .universal-form {
+        padding-top: 35px;
+        padding-bottom: 25px;
+    }
+    .universal-form .first-title {
+        font-size: 24px;
+    }
+    .universal-form .second-title {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .contacts .map {
+        margin-bottom: -65px;
+    }
+}

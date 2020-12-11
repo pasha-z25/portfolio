@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="CleanLab clining" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://cleanlab.od.ua" />
+    <meta property="og:image" content="https://cleanlab.od.ua/img/girl-action.png" />
+
+    <title>CleanLAB</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/expand.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-12 col-sm-5 col-md-4 col-lg-3">
+                    <img src="img/logo_cleanlab.png" alt="cleanlab" class="wow fadeInDown">
+                    <p>чистота – наша забота</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-8 col-lg-9 text-right">
+                    <div class="d-flex flex-wrap justify-content-end align-items-center">
+                        <a class="mx-2" href="tel:+38093XXXYYYY"><img src="img/head-phone.png" alt="phone">+38 (093) XXX YYYY</a>
+                        <a class="mx-2" href="tel:+38066XXXYYYY"><img src="img/head-phone.png" alt="phone">+38 (066) XXX YYYY</a>
+                        <a class="mx-2" href="tel:+38098XXXYYYY"><img src="img/head-phone.png" alt="phone">+38 (098) XXX YYYY</a>
+                        <button id="vacancy-btn" class="vacancy hov-efect">Вакансии</button>
+                    </div>
+                    <div class="d-none">
+                        <a id="head-phone" href="tel:+380938002662"><img src="img/head-phone.png" alt="phone"></a>
+                        <span style="font-size: 14px; font-weight: 500; margin-right: -5px;">+38</span>
+                        <select name="phone-list" id="phone-list">
+                            <option value="tel:+38093XXXYYYY" class="select-option">(093)</option>
+                            <option value="tel:+38066XXXYYYY" class="select-option">(066)</option>
+                            <option value="tel:+38098XXXYYYY" class="select-option">(098)</option>
+                        </select>
+                        <span style="font-size: 14px; font-weight: 500; margin-left: -10px;">XXX YYYY</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="room-select position-relative d-none d-md-block">
+        <ul class="nav nav-pills mb-3 justify-content-center" id="room-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active hov-efect" id="bedroom-tab" data-toggle="pill" href="#pills-bedroom" role="tab" aria-controls="pills-bedroom" aria-selected="true">Комната</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link hov-efect" id="kitchen-tab" data-toggle="pill" href="#pills-kitchen" role="tab" aria-controls="pills-kitchen" aria-selected="false">Кухня</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link hov-efect" id="bathroom-tab" data-toggle="pill" href="#pills-bathroom" role="tab" aria-controls="pills-bathroom" aria-selected="false">Санузел</a>
+            </li>
+        </ul>
+        <div class="tab-content position-relative" id="room-tabContent">
+            <div class="tab-pane fade show active" id="pills-bedroom" role="tabpanel" aria-labelledby="bedroom-tab">
+                <img src="img/bedroom.png" alt="bedroom" class="w-100">
+                <img src="img/bedroom-greenline.png" alt="greenline" class="w-100 greenline">
+                <img src="img/bedroom-redline.png" alt="redline" class="w-100 redline">
+            </div>
+            <div class="tab-pane fade" id="pills-kitchen" role="tabpanel" aria-labelledby="kitchen-tab">
+                <img src="img/kitchen.jpg" alt="kitchen" class="w-100">
+                <img src="img/kitchen-greenline.png" alt="greenline" class="w-100 greenline">
+                <img src="img/kitchen-redline.png" alt="redline" class="w-100 redline">
+            </div>
+            <div class="tab-pane fade" id="pills-bathroom" role="tabpanel" aria-labelledby="bathroom-tab">
+                <img src="img/bathroom.jpg" alt="bathroom" class="w-100">
+                <img src="img/bathroom-greenline.png" alt="greenline" class="w-100 greenline">
+                <img src="img/bathroom-redline.png" alt="redline" class="w-100 redline">
+            </div>
+        </div>
+        <div class="type-of-cleaning">
+            <button class="general-cleaning-btn wow fadeInLeft">Генеральная уборка</button>
+            <button class="regular-cleaning-btn wow fadeInRight">Поддерживащая уборка</button>
+        </div>
+        <div class="social-cube-cover">
+            <div class="cube">
+                <div class="plus">
+                    <div class="plus-horizontal"></div>
+                    <div class="plus-vertical"></div>
+                </div>
+                <div class="quadrant">
+                    <div class="quadrant__item">
+                        <div class="quadrant__item__content">
+                            <a href="https://www.facebook.com/cleanlab.od.ua/" target="_blank"><img src="img/facebook.png" alt="facebook" class="hovr"></a>
+                        </div>
+                    </div>
+                    <div class="quadrant__item">
+                        <div class="quadrant__item__content">
+                            <a href="mailto:cleanlab.office@gmail.com" target="_blank"><img src="img/mail.png" alt="e-mail" class="hovr"></a>
+                        </div>
+                    </div>
+                    <div class="quadrant__item">
+                        <div class="quadrant__item__content">
+                            <a href="https://www.instagram.com/cleanlab_odessa" target="_blank"><img src="img/instagram.png" alt="instagram" class="hovr"></a>
+                        </div>
+                    </div>
+                    <div class="quadrant__item">
+                        <div class="quadrant__item__content">
+                            <a onclick="return showBinotel('Хотите, перезвоним Вам за 30 секунд?')" class=“bingc-action-open-passive-form" ><img src="img/call-answer.png" alt="" class="hovr"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="experience">
+        <div class="container">
+            <div class="row clean-action">
+                <div class="col-12 col-md-6 my-5 d-flex flex-column justify-content-center">
+                    <h2>Акция!</h2>
+                    <h3>Заказывай уборку сейчас и получи <span>скидку 15%</span> на все виды уборки.</h3>
+                    <a class="scroll-block" href="#zakaz-page"><button class="btn-red red-hover">Заказать уборку</button></a>
+                </div>
+                <div class="col-12 col-md-6 position-relative">
+                    <img src="img/girl-action.png" alt="girl" class="girl-action">
+                </div>
+            </div>
+            <div class="row justify-content-around d-none">
+                <div class="col-12 col-sm-4 col-md-3 text-center experience-card">
+                    <p class="exper_numb">3000</p>
+                    <img src="img/line_w38.png" alt="line">
+                    <p>Убраных до бллеска <br>помещений</p>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3 text-center experience-card">
+                    <p class="exper_numb">1500</p>
+                    <img src="img/line_w38.png" alt="line">
+                    <p>Довольных  результатом <br>клиентов</p>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3 text-center experience-card">
+                    <p class="exper_numb">50</p>
+                    <img src="img/line_w38.png" alt="line">
+                    <p>Профессиональных  <br>клинеров</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="maintenance-cleaning" id="maintenance-cleaning">
+        <div class="maintenance-cover d-flex position-relative">
+            <div class="white-50-left w-md-50_w-100 wow fadeInLeft"></div>
+            <div class="transp-50-right w-md-50_w-100 wow fadeInRight"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 cleaning-space wow fadeInLeft">
+                        <h2 class="cleaning-title t-grey">Поддерживающая <br>уборка –</h2>
+                        <h3 class="cleaning-subtitle t-grey">направлена на поддержание чистоты <br>и порядка в Вашем доме.</h3>
+                        <a href="#maintenance-description" class="scroll-block"><button class="btn-red red-hover">ЧТО И КАК МЫ УБИРАЕМ</button></a>
+                    </div>
+                    <div class="col-12 col-md-6 form-space my-auto wow fadeInRight">
+                        <div class="calc-block mx-auto text-center">
+                            <h3 class="calc-title">Выберите параметры уборки:</h3>
+                            <img src="img/line_w80.png" alt="line" class="pb-4">
+                            <div class="d-flex justify-content-center my-3">
+                                <button class="btn-value room-val-rem-1">-</button>
+                                <p class="calc-grey-text mx-3"><span id="1-room-val">1</span> комната</p>
+                                <button class="btn-value room-val-add-1">+</button>
+                            </div>
+                            <div class="d-flex justify-content-center my-3">
+                                <button class="btn-value wc-val-rem-1">-</button>
+                                <p class="calc-grey-text mx-3"><span id="1-wc-val">1</span> санузел</p>
+                                <button class="btn-value wc-val-add-1">+</button>
+                            </div>
+                            <div class="d-flex justify-content-center my-3">
+                                <img src="img/phone_green.png" alt="phone" class="z-3">
+                                <input type="text" placeholder="Введите  номер телефона" class="input-field" id="1-phone-field">
+                            </div>
+                            <button class="btn-calc hov-efect mt-4 mb-5" data-toggle="modal" data-target="#exampleModal" id="form1">Расчитать стоимость</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maintenance-description" id="maintenance-description">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center mb-4">
+                        <h2 class="description-title t-grey text-uppercase">Что входит в поддерживающую уборку?</h2>
+                        <h3 class="description-subtitle t-grey">узнайте что входит в убоку зависимо от выбранного помещения</h3>
+                        <img src="img/line_w80.png" alt="line" class="mt-2 mb-5">
+                    </div>
+                    <div class="col-12">
+                        <ul class="nav nav-pills serv-tab justify-content-between mt-2 mb-5" id="maintenance-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active hov-efect" id="maintenance-rooms-tab" data-toggle="pill" href="#maintenance-pills-rooms" role="tab" aria-controls="pills-rooms" aria-selected="true">Комнаты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hov-efect" id="maintenance-kitchen-tab" data-toggle="pill" href="#maintenance-pills-kitchen" role="tab" aria-controls="pills-kitchen" aria-selected="false">Кухня</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hov-efect" id="maintenance-bathroom-tab" data-toggle="pill" href="#maintenance-pills-bathroom" role="tab" aria-controls="pills-bathroom" aria-selected="false">Ванная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hov-efect" id="maintenance-hallway-tab" data-toggle="pill" href="#maintenance-pills-hallway" role="tab" aria-controls="pills-hallway" aria-selected="false">Коридор</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link transpar hov-efect" id="maintenance-additionally-tab" data-toggle="pill" href="#maintenance-pills-additionally" role="tab" aria-controls="pills-additionally" aria-selected="false">На последок мы...</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content description" id="maintenance-tabContent">
+                            <div class="tab-pane fade show active" id="maintenance-pills-rooms" role="tabpanel" aria-labelledby="pills-rooms-tab">
+                                <div class="w-md-50_w-100">
+                                    <img src="img/living-room1.png" alt="service_image" class="w-100">
+                                </div>
+                                <div class="w-md-50_w-100 pl-5">
+                                    <h3 class="t-normal mt-2"><span class="t-bold">В комнатах мы:</span></h3>
+                                    <ul>
+                                        <li class="t-normal">- протираем все доступные поверхности и бытовую технику</li>
+                                        <li class="t-normal">- протираем выключатели и дверные ручки</li>
+                                        <li class="t-normal">- чистим стеклянные поверхности и зеркала</li>
+                                        <li class="t-normal">- пылесосим ковры и коврики</li>
+                                        <li class="t-normal">- моем пол и плинтусы</li>
+                                    </ul>
+                                    <h3 class="t-normal"><span class="t-bold">Дополнительно:</span></h3>
+                                    <ul>
+                                        <li class="t-normal">- помоем окна (от 150 грн за окно)</li>
+                                        <li class="t-normal">- помоем люстру (от 100 грн)</li>
+                                        <li class="t-normal">- заберем ключи (100 грн)</li>
+                                        <li class="t-normal">- доставим ключи (100 грн)</li>
+                                    </ul>
+                                    <div class="d-flex pt-3 mb-3">
+                                        <p class="description-subtitle m-0 pt-1"><span class="t-bold">И всё это </span></p>
+                                        <p class="aqua-text m-0 ml-2"> от <span>450</span>грн</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="maintenance-pills-kitchen" role="tabpanel" aria-labelledby="pills-kitchen-tab">
+                                <div class="w-md-50_w-100">
+                                    <img src="img/kitchen1.png" alt="service_image" class="w-100">
+                                </div>
+                                <div class="w-md-50_w-100 pl-5">
+                                    <h3 class="t-normal mt-2"><span class="t-bold">В кухне мы:</span></h3>
+                                    <ul>
+                                        <li class="t-normal">- моем посуду</li>
+                                        <li class="t-normal">- моем раковину</li>
+                                        <li class="t-normal">- протираем фасады кухонных шкафов, моем снаружи плиту, холодильник и вытяжку</li>
+                                        <li class="t-normal">- протираем столешницу и кухонный фартук</li>
+                                        <li class="t-normal">- пылесосим, моем пол и плинтусы</li>
+                                    </ul>
+                                    <h3 class="t-normal"><span class="t-bold">Дополнительно:</span></h3>
+                                    <ul>
+                                        <li class="t-normal">- помоем холодильник (100 грн)</li>
+                                        <li class="t-normal">- помоем духовку (50 грн)</li>
+                                        <li class="t-normal">- помоем микроволновку (50 грн)</li>
+                                        <li class="t-normal">- приберем кухонные шкафы (200 грн)</li>
+                                    </ul>
+                                    <div class="d-flex pt-3 mb-3">
+                                        <p class="description-subtitle m-0 pt-1"><span class="t-bold">И всё это </span></p>
+                                        <p class="aqua-text m-0 ml-2"> от <span>450</span>грн</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="maintenance-pills-bathroom" role="tabpanel" aria-labelledby="pills-bathroom-tab">
+                                <div class="w-md-50_w-100">
+                                    <img src="img/bathroom1.png" alt="service_image" class="w-100">
+                                </div>
+                                <div class="w-md-50_w-100 pl-5">
+                                    <h3 class="t-normal mt-2"><span class="t-bold">В ванной мы:</span></h3>
+                                    <ul>
+                                        <li class="t-normal">- протираем все доступные поверхности, выключатели и дверные ручки</li>
+                                        <li class="t-normal">- чистим стеклянные поверхности и зеркала</li>
+                                        <li class="t-normal">- моем ванную, душевую кабину и раковину</li>
+                                        <li class="t-normal">- чистим туалет</li>
+                                        <li class="t-normal">- пылесосим коврики, моем пол и плинтусы</li>
+                                    </ul>
+                                    <div class="d-flex pt-3 mb-3">
+                                        <p class="description-subtitle m-0 pt-1"><span class="t-bold">И всё это </span></p>
+                                        <p class="aqua-text m-0 ml-2"> от <span>450</span>грн</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="maintenance-pills-hallway" role="tabpanel" aria-labelledby="pills-hallway-tab">
+                                <div class="w-md-50_w-100">
+                                    <img src="img/koridor1.png" alt="service_image" class="w-100">
+                                </div>
+                                <div class="w-md-50_w-100 pl-5">
+                                    <h3 class="t-normal mt-2"><span class="t-bold">В коридоре мы:</span></h3>
+                                    <ul>
+                                        <li class="t-normal">- протираем все доступные поверхности, выключатели и дверные ручки</li>
+                                        <li class="t-normal">- чистим зеркала и стеклянные поверхности</li>
+                                        <li class="t-normal">- пылесосим ковры, моем пол и плинтусы</li>
+                                    </ul>
+                                    <div class="d-flex pt-3 mb-3">
+                                        <p class="description-subtitle m-0 p-1"><span class="t-bold">И всё это </span></p>
+                                        <p class="aqua-text m-0 ml-2"> от <span>450</span>грн</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="maintenance-pills-additionally" role="tabpanel" aria-labelledby="pills-additionally-tab">
+                                <div class="w-md-50_w-100">
+                                    <img src="img/last1.png" alt="service_image" class="w-100">
+                                </div>
+                                <div class="w-md-50_w-100 pl-5">
+                                    <h3 class="t-normal mt-2"><span class="t-bold">На последок:</span></h3>
+                                    <ul>
+                                        <li class="t-normal">- заправляем постель или меняем постельное бельё</li>
+                                        <li class="t-normal">- аккуратно складываем одежду</li>
+                                        <li class="t-normal">- расставляем обувь</li>
+                                    </ul>
+                                    <h3 class="t-normal"><span class="t-bold">Дополнительно:</span></h3>
+                                    <ul>
+                                        <li class="t-normal">- помоем принадлежности питомца (30 грн)</li>
+                                        <li class="t-normal">- приберём балкон (400 грн)</li>
+                                        <li class="t-normal">- погладим вещи (300 грн)</li>
+                                        <li class="t-normal">- постираем грязное бельё (50 грн)</li>
+                                    </ul>
+                                    <div class="d-flex pt-3 mb-3">
+                                        <p class="description-subtitle m-0 pt-1"><span class="t-bold">И всё это </span></p>
+                                        <p class="aqua-text m-0 ml-2"> от <span>450</span>грн</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="width-line mt-5 mb-4"></span>
+                    <div class="col-12 col-md-4">
+                        <h2 class="description-subtitle t-grey text-uppercase"><span class="t-bold">Сможем Вам также помочь</span></h2>
+                        <h3 class="description-subtitle t-grey">при заказе услуги <br>
+                            генеральная уборка:</h3>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <ul>
+                            <li class="t-normal">- химчистка ковров</li>
+                            <li class="t-normal">- чистка штор и жалюзей</li>
+                            <li class="t-normal">- уборка в кладовой и гардеробной</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <ul>
+                            <li class="t-normal">- мойка стен</li>
+                            <li class="t-normal">- удаляем глубокие пятна и чистим паром</li>
+                            <li class="t-normal">- делаем уборку в труднодоступных местах</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 d-sm-flex justify-content-end align-items-end my-5">
+                        <a class="scroll-block" href="#zakaz-page"><button class="btn-red red-hover ml-4">Заказать генеральную уборку</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="spring-cleaning" id="spring-cleaning">
+        <div class="spring-cover d-flex position-relative">
+            <div class="transp-50-left w-md-50_w-100 wow fadeInLeft"></div>
+            <div class="grey-50-right w-md-50_w-100 wow fadeInRight"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 my-auto py-3 wow fadeInLeft">
+                        <div class="calc-block mx-auto text-center">
+                            <h3 class="calc-title">Выберите параметры уборки:</h3>
+                            <img src="img/line_w80.png" alt="line" class="pb-4">
+                            <div class="d-flex justify-content-center my-3 square-box">
+                                <input type="text" placeholder="Площадь помещения (в кв.м)" class="input-field" id="1-square">
+                            </div>
+                            <div class="d-flex justify-content-center my-3">
+                                <img src="img/phone_green.png" alt="phone" class="z-3">
+                                <input type="text" placeholder="Введите  номер телефона" class="input-field" id="2-phone-field">
+                            </div>
+                            <div class="check-box d-flex justify-content-between my-1">
+                                <input type="checkbox" id="checkBox01" checked>
+                                <label for="checkBox01" class="t-normal">Нужна мойка окон</label>
+                            </div>
+                            <div class="check-box d-flex justify-content-between my-1">
+                                <input type="checkbox" id="checkBox02">
+                                <label for="checkBox02" class="t-normal">Нужна химчистка мебели <br>или ковровых покрытий</label>
+                            </div>
+                            <button class="btn-calc my-5 hov-efect" data-toggle="modal" data-target="#exampleModal" id="form2">Расчитать стоимость</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 spring-spacing wow fadeInRight">
+                        <h2 class="cleaning-title t-white">Генеральная уборка (послестроительная уборка) –</h2>
+                        <p class="cleaning-subtitle t-white">
+                            команда специалистов, которые обучены (готовы) справляться с самыми трудновыводимыми
+                            загрязнениями, использующие профессиональную химию и оборудование.
+                        </p>
+                        <a href="#spring-description" class="scroll-block"><button class="btn-red red-hover">ЧТО И КАК МЫ УБИРАЕМ</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spring-description" id="spring-description">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <h2 class="description-title t-grey text-uppercase">Что входит в генеральную уборку?</h2>
+                        <h3 class="description-subtitle t-grey">узнайте что входит в убоку зависимо от выбранного помещения</h3>
+                        <img src="img/line_w80.png" alt="line" class="mt-2 mb-5">
+                    </div>
+                    <div class="col-12">
+                        <ul class="nav nav-pills serv-tab justify-content-between mt-2 mb-5" id="spring-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active hov-efect" id="spring-rooms-tab" data-toggle="pill" href="#spring-rooms" role="tab" aria-controls="spring-rooms" aria-selected="true">Комнаты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hov-efect" id="spring-kitchen-tab" data-toggle="pill" href="#spring-kitchen" role="tab" aria-controls="spring-kitchen" aria-selected="false">Кухня</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hov-efect" id="spring-bathroom-tab" data-toggle="pill" href="#spring-bathroom" role="tab" aria-controls="spring-bathroom" aria-selected="false">Ванная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hov-efect" id="spring-hallway-tab" data-toggle="pill" href="#spring-hallway" role="tab" aria-controls="spring-hallway" aria-selected="false">Коридор</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link transpar hov-efect" id="spring-additionally-tab" data-toggle="pill" href="#spring-additionally" role="tab" aria-controls="spring-additionally" aria-selected="false">На последок мы...</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content description" id="spring-tabContent">
+                            <div class="tab-pane fade show active" id="spring-rooms" role="tabpanel" aria-labelledby="spring-rooms-tab">
+                                <div class="w-md-50_w-100">
+                                    <img src="img/living-room2.png" alt="service_image" class="w-100">
+                                </div>
+                                <div class="w-md-50_w-100 pl-5 mt-3">
+                                    <h3 class="t-normal mt-2"><span class="t-bold">В комнатах мы:</span></h3>
+                                    <ul>
+                                        <li class="t-normal">- протираем все доступные поверхности, бытовую технику, выключатели и дверные ручки</li>
+                                        <li class="t-normal">- чистим стеклянные поверхности и зеркала</li>
+                                        <li class="t-normal">- моем мебель изнутри и снаружи (по Вашим пожеланиям)</li>
+                                        <li class="t-normal">- моем люстры и светильники</li>
+                                        <li class="t-normal">- моем пол, протираем плинтусы и пылесосим ковровые покрытия</li>
+                                    </ul>
+                                    <span class="width-line mt-5 mb-4"></span>
+                                    <div class="d-flex pt-3">
+                                        <p class="description-subtitle m-0 pt-1"><span class="t-bold">И всё это </span></p>
+                                        <p class="aqua-text m-0 ml-2"> от <span>1500</span>грн</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="spring-kitchen" role="tabpanel" aria-labelledby="spring-kitchen-tab">
+                                <div class="w-md-50_w-100">
+                                    <img src="img/kitchen2.png" alt="service_image" class="w-100">
+                                </div>
+                                <div class="w-md-50_w-100 pl-5 mt-3">
+                                    <h3 class="t-normal mt-2"><span class="t-bold">В кухне мы:</span></h3>
+                                    <ul>
+                                        <li class="t-normal">- моем изнутри и снаружи плиту, столешницу и холодильник</li>
+                                        <li class="t-normal">- протираем все доступные поверхности, бытовую технику, выключатели и дверные ручки</li>
+                                        <li class="t-normal">- моем вытяжку и кухонную мебель изнутри и снаружи (по Вашим пожеланиям)</li>
+                                        <li class="t-normal">- моем раковину</li>
+                                        <li class="t-normal">- пылесосим, моем пол и протираем плинтусы</li>
+                                        <li class="t-normal">- моем посуду</li>
+                                    </ul>
+                                    <span class="width-line mt-5 mb-4"></span>
+                                    <div class="d-flex pt-3">
+                                        <p class="description-subtitle m-0 pt-1"><span class="t-bold">И всё это </span></p>
+                                        <p class="aqua-text m-0 ml-2"> от <span>1500</span>грн</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="spring-bathroom" role="tabpanel" aria-labelledby="spring-bathroom-tab">
+                                <div class="w-md-50_w-100">
+                                    <img src="img/bathroom2.png" alt="service_image" class="w-100">
+                                </div>
+                                <div class="w-md-50_w-100 pl-5 mt-3">
+                                    <h3 class="t-normal mt-2"><span class="t-bold">В ванной мы:</span></h3>
+                                    <ul>
+                                        <li class="t-normal">- протираем все доступные поверхности, выключатели и дверные ручки</li>
+                                        <li class="t-normal">- моем и дезинфицируем унитаз</li>
+                                        <li class="t-normal">- чистим стеклянные поверхности и зеркала</li>
+                                        <li class="t-normal">- моем ванную, душевую кабину и раковину</li>
+                                        <li class="t-normal">- разбираемся с сильными загрязнениями и известковыми налётами</li>
+                                        <li class="t-normal">- протираем шкафы с внешней и внутренней стороны (по Вашим пожеланиям)</li>
+                                        <li class="t-normal">- пылесосим коврики, моем пол и плинтусы</li>
+                                    </ul>
+                                    <span class="width-line mt-5 mb-4"></span>
+                                    <div class="d-flex pt-3">
+                                        <p class="description-subtitle m-0 pt-1"><span class="t-bold">И всё это </span></p>
+                                        <p class="aqua-text m-0 ml-2"> от <span>1500</span>грн</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="spring-hallway" role="tabpanel" aria-labelledby="spring-hallway-tab">
+                                <div class="w-md-50_w-100">
+                                    <img src="img/koridor2.png" alt="service_image" class="w-100">
+                                </div>
+                                <div class="w-md-50_w-100 pl-5 mt-3">
+                                    <h3 class="t-normal mt-2"><span class="t-bold">В коридоре мы:</span></h3>
+                                    <ul>
+                                        <li class="t-normal">- протираем все доступные поверхности, бытовую технику, выключатели и дверные ручки</li>
+                                        <li class="t-normal">- моем мебель изнутри и снаружи (по Вашим пожеланиям)</li>
+                                        <li class="t-normal">- чистим зеркала и стеклянные поверхности </li>
+                                        <li class="t-normal">- пылесосим ковры, моем пол и плинтусы</li>
+                                    </ul>
+                                    <span class="width-line mt-5 mb-4"></span>
+                                    <div class="d-flex pt-3">
+                                        <p class="description-subtitle m-0 pt-1"><span class="t-bold">И всё это </span></p>
+                                        <p class="aqua-text m-0 ml-2"> от <span>1500</span>грн</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="spring-additionally" role="tabpanel" aria-labelledby="spring-additionally-tab">
+                                <div class="w-md-50_w-100">
+                                    <img src="img/last2.png" alt="service_image" class="w-100">
+                                </div>
+                                <div class="w-md-50_w-100 pl-5 mt-3">
+                                    <h3 class="t-normal mt-2"><span class="t-bold">На последок:</span></h3>
+                                    <ul>
+                                        <li class="t-normal">- заправляем постель или меняем постельное бельё</li>
+                                        <li class="t-normal">- аккуратно складываем одежду и расставляем вещи</li>
+                                        <li class="t-normal">- расставляем обувь</li>
+                                        <li class="t-normal">- выносим мусор</li>
+                                    </ul>
+                                    <h3 class="t-normal"><span class="t-bold">Дополнительно:</span></h3>
+                                    <ul>
+                                        <li class="t-normal">- помоем окна СНАРУЖИ (от 150 грн за окно)</li>
+                                        <li class="t-normal">- проведем химчистку ковровых покрытий (от 25 грн за кв.м)</li>
+                                        <li class="t-normal">- проведем химчистку мебели и матрасов</li>
+                                        <li class="t-normal">- заберём ключи (100 грн)</li>
+                                        <li class="t-normal">- доставим ключи (100 грн)</li>
+                                    </ul>
+                                    <span class="width-line mt-5 mb-4"></span>
+                                    <div class="d-flex pt-3">
+                                        <p class="description-subtitle m-0 pt-1"><span class="t-bold">И всё это </span></p>
+                                        <p class="aqua-text m-0 ml-2"> от <span>1500</span>грн</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 pr-0 pt-5">
+                        <p class="spring-description-subtitle-bold">
+                            Для более эффективного поддержания порядка в Вашем доме советуем оформить ПОДПИСКУ НА УБОРКУ.
+                        </p>
+                        <p class="spring-description-subtitle">
+                            КАК это работает и ЧЕМ это поможет повысить Ваш домашний комфорт расскажет наш CALL-центр.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 my-auto py-3 pl-5">
+                        <a class="scroll-block" href="#zakaz-page"><button class="btn-red big-btn red-hover">ПОДПИСАТЬСЯ НА УБОРКУ</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="office-cleaning" id="office-cleaning">
+        <div class="office-cover d-flex position-relative">
+            <div class="white-50-left w-md-50_w-100 wow fadeInLeft"></div>
+            <div class="transp-50-right w-md-50_w-100 wow fadeInRight"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 title-cover-spacing wow fadeInLeft">
+                        <h2 class="cleaning-title t-grey">Уборка офиса –</h2>
+                        <p class="cleaning-subtitle t-grey">
+                            для того, чтобы Ваш бизнес выглядел привлекательным для клиентов – Вам необходимо
+                            поддерживать чистоту! Мы сможем Вам в этом помочь как на постоянной основе,
+                            так и для разовой уборки.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 py-3 my-auto wow fadeInRight">
+                        <div class="calc-block mx-auto text-center">
+                            <h3 class="calc-title">Выберите параметры уборки:</h3>
+                            <img src="img/line_w80.png" alt="line" class="pb-4">
+                            <div class="d-flex justify-content-center square-box my-3">
+                                <input type="text" placeholder="Площадь офиса (в кв.м)" class="input-field" id="2-square">
+                            </div>
+                            <div class="d-flex justify-content-center my-3">
+                                <img src="img/phone_green.png" alt="phone" class="z-3">
+                                <input type="text" placeholder="Введите  номер телефона" class="input-field" id="3-phone-field">
+                            </div>
+                            <button class="btn-calc my-5 hov-efect" data-toggle="modal" data-target="#exampleModal" id="form3">Расчитать стоимость</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="calculation">
+        <div class="green-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 text-center my-3">
+                        <img src="img/diamond.png" alt="diamond" class="mb-1">
+                        <p class="green-box-title">Гарантия качественной <br>уборки</p>
+                        <p class="green-box-text">мы гарантируем качество уборки нашей командой, так как постоянно проводим контроль уборки и действий клинеров.</p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center my-3">
+                        <img src="img/cleaning-lady.png" alt="cleaning-lady">
+                        <p class="green-box-title">Профессиональные <br>клинеры</p>
+                        <p class="green-box-text">каждый клинер, желающий стать участником нашей команды, проходит отбор и обучение стандартам уборки CLEANLAB.</p>
+                    </div>
+                    <div class="col-12 col-md-4 text-center my-3">
+                        <img src="img/cleaning.png" alt="cleaning">
+                        <p class="green-box-title">Современное <br>оборудование</p>
+                        <p class="green-box-text">все выбранные нами современные чистящие средства являются профессиональной химией и применяются исключительно по назначению.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5 mb-5">
+            <div class="row my-3 py-5">
+                <div class="col-12 text-center">
+                    <h2 class="description-title t-grey text-uppercase">Сколько стоит поддерживающая уборка</h2>
+                    <p class="description-subtitle t-grey">узнайте цену Вашей уборки в зависимости от количества комнат в квартире</p>
+                    <img src="img/line_w80.png" alt="line" class="mt-2 mb-5">
+                </div>
+                <div class="col-12 col-md-4 text-center py-4">
+                    <div class="shadow-box">
+                        <p class="shadow-box-text">1-комнатная</p>
+                        <p class="aqua-text">от <span>450</span>грн</p>
+                    </div>
+                    <a class="scroll-block" href="#zakaz-page"><button class="btn-red red-hover">Заказать</button></a>
+                </div>
+                <div class="col-12 col-md-4 text-center py-4">
+                    <div class="shadow-box">
+                        <p class="shadow-box-text">2-комнатная</p>
+                        <p class="aqua-text">от <span>550</span>грн</p>
+                    </div>
+                    <a class="scroll-block" href="#zakaz-page"><button class="btn-red red-hover">Заказать</button></a>
+                </div>
+                <div class="col-12 col-md-4 text-center py-4">
+                    <div class="shadow-box">
+                        <p class="shadow-box-text">3-комнатная</p>
+                        <p class="aqua-text">от <span>650</span>грн</p>
+                    </div>
+                    <a class="scroll-block" href="#zakaz-page"><button class="btn-red red-hover">Заказать</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="grey-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 text-center py-3 position-relative">
+                        <img src="img/cleaning_inventory.png" alt="cleaning-inventory" class="cleaning-inventory wow fadeInLeft">
+                    </div>
+                    <div class="col-12 col-md-8 text-right">
+                        <h3 class="description-title t-grey text-uppercase mt-2">Сколько стоит Генеральная уборка (Послестрой)</h3>
+                        <p class="description-subtitle t-grey">узнайте цену Вашей уборки в зависимости от площади квартиры</p>
+                        <img src="img/line_w80.png" alt="line" class="mb-5">
+                        <div class="text-center">
+                            <div class="white-box text-center">
+                                <p class="shadow-box-text">генеральная уборка по самым <br>выгодным ценам</p>
+                                <p class="aqua-text">от <span>40</span>грн/кв.м</p>
+                            </div>
+                            <a class="scroll-block" href="#zakaz-page"><button class="btn-red big-btn red-hover">Заказать</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt170" id="zakaz-page">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="description-title t-grey text-uppercase fs46">Заказать уборку</h3>
+                    <p class="description-subtitle t-grey mb-5">заполните форму подходящей Вас уборки</p>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                    <div class="calc-block mx-auto text-center">
+                        <h3 class="calc-title">Генеральная уборка</h3>
+                        <img src="img/line_w80.png" alt="line" class="pb-4">
+                        <div class="d-flex justify-content-center square-box my-3">
+                            <input type="text" placeholder="Площадь помещения (в кв.м)" class="input-field" id="3-square">
+                        </div>
+                        <div class="d-flex justify-content-center my-3">
+                            <img src="img/phone_green.png" alt="phone" class="z-3">
+                            <input type="text" placeholder="Введите номер телефона" class="input-field" id="4-phone-field">
+                        </div>
+                        <div class="check-box d-flex justify-content-between my-1">
+                            <input type="checkbox" id="checkBox03" checked>
+                            <label for="checkBox03" class="t-normal">Нужна мойка окон</label>
+                        </div>
+                        <div class="check-box d-flex justify-content-between my-1">
+                            <input type="checkbox" id="checkBox04">
+                            <label for="checkBox04" class="t-normal">Нужна химчистка мебели</label>
+                        </div>
+                        <button class="btn-red red-hover my-5" data-toggle="modal" data-target="#exampleModal" id="form4">Заказать</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="calc-block mx-auto text-center">
+                        <h3 class="calc-title">Поддерживающая уборка</h3>
+                        <img src="img/line_w80.png" alt="line" class="pb-4">
+                        <div class="d-flex justify-content-center my-3">
+                            <button class="btn-value room-val-rem-2">-</button>
+                            <p class="calc-grey-text mx-3"><span id="2-room-val">1</span> комната</p>
+                            <button class="btn-value room-val-add-2">+</button>
+                        </div>
+                        <div class="d-flex justify-content-center my-3">
+                            <button class="btn-value wc-val-rem-2">-</button>
+                            <p class="calc-grey-text mx-3"><span id="2-wc-val">1</span> санузел</p>
+                            <button class="btn-value wc-val-add-2">+</button>
+                        </div>
+                        <div class="d-flex justify-content-center my-3">
+                            <img src="img/phone_green.png" alt="phone" class="z-3">
+                            <input type="text" placeholder="Введите номер телефона" class="input-field"  id="5-phone-field">
+                        </div>
+                        <button class="btn-red red-hover mt-4 mb-5" data-toggle="modal" data-target="#exampleModal" id="form5">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-12 col-md-5 col-lg-2 mt-5 pt-3">
+                    <img src="img/logo_cleanlab.png" alt="logo" class="mb-3">
+                    <span class="footer-line"></span>
+                    <p class="footer-text"></p>
+                </div>
+                <div class="col-12 col-md-5 col-lg-3 mt-5 pt-4">
+                    <p class="footer-title">Важные разделы</p>
+                    <span class="footer-line"></span>
+                    <p><a href="#maintenance-cleaning" class="footer-link white-link">Поддерживающая уборка</a></p>
+                    <p><a href="#spring-cleaning" class="footer-link white-link">Генеральная уборка</a></p>
+                    <p><a href="#office-cleaning" class="footer-link white-link">Уборка офиса</a></p>
+                    <p id="public-modal" class="white-link public-link">Публичный договор</p>
+                </div>
+                <div class="col-12 col-md-5 col-lg-3 mt-5 pt-4">
+                    <p class="footer-title">Контакты</p>
+                    <span class="footer-line"></span>
+                    <p><img src="img/mini-phone.png" alt="mini-phone" class="mr-2"><a href="tel:+38093XXXYYYY" class="white-link">+ 38 (093) XXX YYYY</a></p>
+                    <p><img src="img/mini-phone.png" alt="mini-phone" class="mr-2"><a href="tel:+38066XXXYYYY" class="white-link">+ 38 (066) XXX YYYY</a></p>
+                    <p><img src="img/mini-phone.png" alt="mini-phone" class="mr-2"><a href="tel:+38098XXXYYYY" class="white-link">+ 38 (098) XXX YYYY</a></p>
+                    <p><img src="img/mini-mail.png" alt="mini-mail" class="mr-2"><a href="mailto:manager@cleanlab.od.ua" class="white-link">manager@domain.ua</a></p>
+                </div>
+                <div class="col-12 col-md-5 col-lg-3 mt-5 pt-3">
+                    <form action="" id="call-back">
+                        <input type="text" placeholder="Ваш номер телефона" class="footer-input" name="Связаться_со_мной_телефон" id="call-tel" required>
+                        <input type="text" placeholder="E-mail" class="footer-input" name="Связаться_со_мной_почта" id="call-mail" required>
+                        <input class="uForm__extended" name="nospam" type="text" value="uform-empty" style="display: none" required>
+                        <p id="uForm__error-msg_3" class="uForm__error-msg" style="color: red"></p>
+                        <div id="uForm__preload_3" class="uForm__preload"></div>
+                        <input type="submit" value="Связаться со мной" class="footer-submit mt-4">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bg-black mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <p class="copyrite">©2020. Company Cleanlab. All rights reserved</p>
+                        <div class="d-flex">
+                            <a href="https://www.facebook.com/cleanlab.od.ua/" target="_blank" class="mx-2"><img src="img/facebook.png" alt="facebook"></a>
+                            <a href="https://www.instagram.com/cleanlab_odessa" target="_blank" class="mx-2"><img src="img/instagram.png" alt="instagram"></a>
+                            <a href="mailto:cleanlab.office@gmail.com" target="_blank" class="mx-2"><img src="img/mail.png" alt="e-mail"></a>
+                            <a onclick="return showBinotel('Хотите, перезвоним Вам за 30 секунд?')" class="bingc-action-open-passive-form mx-2" ><img src="img/call-answer.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <img src="img/scroll_up.png" alt="scroll_up" class="btn-scroll">
+
+<!-- ************************* MODAL WINDOWS ************************* -->
+
+    <div id="modal-vacancy" class="modal-form">
+        <p class="text-right modal_close"><span>&times;</span></p>
+        <h2>Форма отправки резюме</h2>
+        <p>Чтобы стать частью нашей команды оставьте свои контактные данные и прикрепите резюме:</p>
+        <form action="" id="vacancy">
+            <div class="d-flex justify-content-center square-box">
+                <input type="text" placeholder="Ваше имя *" class="input-field" name="Имя_сотрудника" id="vacancy-name" required>
+            </div>
+            <div class="d-flex justify-content-center square-box">
+                <input type="text" placeholder="E-mail *" class="input-field" name="E-mail" id="vacancy-mail" required>
+            </div>
+            <div class="d-flex justify-content-center my-1">
+                <img src="img/phone_green.png" alt="phone" class="z-3">
+                <input type="text" placeholder="Номер телефона *" class="input-field m-0" name="телефон_сотрудника" id="vacancy-tel" required>
+            </div>
+            <input type="file" class="file" name="vacancy-file" id="vacancy-file">
+            <input class="uForm__extended" name="nospam" type="text" value="uform-empty" style="display: none" required>
+            <p class="hint-text">* - поля обязательные для заполнения</p>
+            <p id="uForm__error-msg_1" class="uForm__error-msg" style="color: red"></p>
+            <div id="uForm__preload_1" class="uForm__preload"></div>
+            <input type="submit" class="submit" value="Отправить">
+        </form>
+    </div>
+    <div id="modal-calc" class="modal-form">
+        <p class="text-right modal_close"><span>&times;</span></p>
+        <h2>Заказать уборку</h2>
+        <p>Вы можете заказать уборку указав свои контактные данные:</p>
+        <form action="" id="calculator">
+            <div class="d-flex justify-content-center square-box">
+                <input type="text" placeholder="Ваше имя *" class="input-field" name="Имя_клиента" id="calc-name" required>
+            </div>
+            <div class="d-flex justify-content-center square-box">
+                <input type="text" placeholder="E-mail *" class="input-field" name="E-mail" id="calc-mail" required>
+            </div>
+            <div class="d-flex justify-content-center my-1">
+                <img src="img/phone_green.png" alt="phone" class="z-3">
+                <input type="text" placeholder="Номер телефона *" class="input-field m-0" id="client-phone" name="Телефон" required>
+            </div>
+            <div class="d-flex justify-content-center square-box">
+                <p id="number_of_rooms" style="display: none">Комнат: <span id="room">0.</span></p>
+                <p id="number_of_wc_rooms" style="display: none">Санузлов: <span id="wc_room">0.</span></p>
+                <p id="total_square" style="display: none">Площадь: <span id="form-square"><span id="square">0</span> м2</span></p>
+                <p id="clean_window" style="display: none">Окна: <span id="window">нет</span></p>
+                <p id="dry_cleaning" style="display: none">Химчистка: <span id="clean">нет</span></p>
+                <p id="form-category" style="display: none">Заявка из категории: <span id="category">без категории</span></p>
+            </div>
+            <p class="clean_cost" id="clean_cost">Стоимость Вашего заказа <span id="form-cost">составит <span id="final-cost">0</span><span style="color: #ff5000"> грн</span></span></p>
+            <input class="uForm__extended" name="nospam" type="text" value="uform-empty" style="display: none" required>
+            <p class="hint-text">* - поля обязательные для заполнения</p>
+            <p id="uForm__error-msg_2" class="uForm__error-msg" style="color: red"></p>
+            <div id="uForm__preload_2" class="uForm__preload"></div>
+            <input type="submit" class="submit" value="Оформить заказ">
+        </form>
+    </div>
+    <div id="modal-public" class="modal-public-contract">
+        <p class="text-right modal_close"><span>&times;</span></p>
+        <div class="public-body">
+            <p align="center"><strong>ПУБЛІЧНИЙ  ДОГОВІР</strong><br>
+                <strong>про надання послуг з прибирання приміщень</strong></p>
+            <p><strong>Фізична  особа підприємець – Бондар Алла Василівна, </strong>що діє на підставі<strong> </strong>Свідоцтва  про державну реєстрацію фізичної особи-підприємця від 30 березня 2010р.,  реєстраційний номер <u>955793</u>, ідентифікаційний номер фізичної  особи-платника податків <u>2935623548</u> надалі «Виконавець» з однієї  сторони, пропонує фізичним і юридичним особам та фізичній особі, яка здійснює  підприємницьку діяльність без створення юридичної особи (далі – «Замовник»)  отримати послуги, передбачені цим Договором.<br>
+                Даний договір є публічним, відповідно до ст.ст. 633, 641  Цивільного кодексу України, та його умови є однакові для всіх Замовників,  беззастережне прийняття умов якого вважаються акцептуванням цієї оферти  Замовником, для чого Виконавець публікує цей Договір про таке:</p>
+            <ul>
+                <li><strong>ЗАГАЛЬНІ  ПОЛОЖЕННЯ</strong></li>
+                <ul>
+                    <li>Визначення  термінів:</li>
+                </ul>
+            </ul>
+            <p><strong>Публічний договір</strong> – цей  правочин про надання та отримання послуг, який встановлює однакові для всіх  Замовників умови надання цих послуг на умовах публічної оферти з моменту її  акцептування Замовником (далі – «Договір»).<br>
+                <strong>Публічна оферта</strong> –  пропозиція Виконавця, адресована будь-якій фізичній і юридичній особі та  фізичній особі, яка здійснює підприємницьку діяльність без створення юридичної  особи відповідно до статті 641 Цивільного кодексу України, укласти з ним  договір, що міститься в публічній оферті.<br>
+                <strong>Акцептування договору</strong> - є  оформлення (підписання) Замовником заяви-приєднання до Договору (Додаток 1 до  цього Договору) та/або внесення ним плати за замовлені Послуги, що свідчить про  прийняття ним публічної оферти.<br>
+                Договір вважається укладеним без його подальшого підписання з моменту  отримання Виконавцем заяви-приєднання від Замовника та/або оплати Замовником  замовлених Послуг чи вчинення інших дій, передбачених Договором, що свідчать  про згоду дотримуватися умов Договору, без підписання письмового примірника  Сторонами.<br>
+                Замовник дає згоду дотримуватися умов Договору та згоду отримати Послуги на  встановлених Виконавцем умовах з моменту оформлення (підписання) Виконавцем  заяви-приєднання та/або оплати замовлених Послуг.<br>
+                Укладаючи Договір, Замовник автоматично погоджується з повним та безумовним  прийняттям Замовником положень Договору, Тарифів та всіх додатків, що є  невід&rsquo;ємною складовою частиною Договору.<br>
+                <strong>Замовник</strong> — фізична і юридична  особа та фізична особа, яка здійснює підприємницьку діяльність без створення  юридичної особи, що уклала з Виконавцем цей Договір.<br>
+                <strong>Тарифи</strong> — при прийнятті  умов Оферти, Замовник зобов'язується оплатити обрані ним Послуги відповідно до  Тарифів що є однаковими для всіх Замовників розмір плати за надання відповідних  послуг у визначені строки і розміщені на Офіційному Веб-сайті Виконавця та/або  відповідно до прорахунку.<br>
+                <strong>Послуга</strong> — діяльність  Виконавця, що здійснюється за замовленням Замовника згідно переліку послуг,  розміщених на Веб-сайті за адресою <a href="http://cleanlab.od.ua/">http://cleanlab.od.ua/</a>, умов спеціальних  пропозицій і акцій, якими Клієнт бажає скористатися.<br>
+                <strong>Сайт</strong> — веб-сайт  Виконавця в мережі Інтернет, що розміщений за адресою: <a href="http://cleanlab.od.ua/">http://cleanlab.od.ua/</a>.</p>
+            <ul>
+                <ul>
+                    <li>Кожна  Сторона гарантує іншій Стороні, що володіє необхідною дієздатністю, а також  всіма правами і повноваженнями, необхідними і достатніми для укладання і  виконання цього Договору відповідно до його умов.</li>
+                    <li>Всі умови  Договору, викладені в цій Публічній оферті, є обов&rsquo;язковими для Сторін.</li>
+                    <li>Якщо  Замовник не згодний з умовами Договору, він має право не укладати цей Договір.  Відповідно, Замовник, який здійснив Акцепт, підтверджує своє ознайомлення та  згоду з усіма умовами цього Договору.</li>
+                    <li>Договір про  надання послуг укладається шляхом надання згоди Замовником на приєднання до  запропонованого Договору в цілому, шляхом акцептуванням всіх істотних умов  Договору, без підпису письмового примірника сторонами. Дійсний Договір має  юридичну силу відповідно до ст. 633 ЦК України і є рівносильним Договору,  підписаному сторонами.</li>
+                </ul>
+                <li><strong>УМОВИ  НАДАННЯ ТА ОТРИМАННЯ ПОСЛУГ</strong></li>
+                <ul>
+                    <li>Наявність у  Виконавця технічної та іншої можливості для надання Замовнику замовленої  Послуги.</li>
+                    <li>Ознайомлення  Замовника з умовами цього Договору.</li>
+                    <li>Надання  Замовником згоди на обробку його персональних даних відповідно до Закону  України «Про захист персональних даних».</li>
+                    <li>Оформлення  (підписання) Замовником письмової заяви-приєднання до даного Договору.</li>
+                    <li>Оформлення  (підписання) Замовником інших документів, необхідних для отримання тієї чи  іншої Послуги.</li>
+                    <li>Внесення  Замовником на розрахунковий рахунок Виконавця плати за надання Послуги у  розмірі, встановленому діючими Тарифами.</li>
+                </ul>
+                <li><strong>ПРЕДМЕТ  ДОГОВОРУ</strong></li>
+                <ul>
+                    <li>За цім  Договором Виконавець надає Замовнику Послуги за бажанням Замовника згідно умов  даного Договору за діючими тарифами (надалі - «Тарифи») Виконавця. Опис Послуг,  їх перелік, інформація про Тарифи на Послуги перебувають на Офіційному Сайті  Виконавця - <a href="http://_______.od.ua/">http://cleanlab.od.ua/</a> або  уточнюється додатково до початку надання Послуг шляхом прорахування на об&rsquo;єкті  прибирання.</li>
+                    <li>При  прийнятті умов Договору, Замовник зобов'язується оплатити обрані ним Послуги  відповідно до Тарифів, зазначеними на Офіційному Сайті Виконавця або відповідно  до прорахунку.</li>
+                    <li>Договір є  офіційним документом і має відповідну юридичну силу і публікується на  офіційному Сайті фізичної особи підприємця Бондар Алли Василівни - <a href="http://_______.od.ua/">http://cleanlab.od.ua/</a>.</li>
+                    <li>Замовник  погоджується, що всі можливі суперечки щодо даного Договору будуть вирішуватися  відповідно до Законодавства України.</li>
+                </ul>
+                <li><strong>ПРАВА ТА  ОБОВ&rsquo;ЯЗКИ СТОРІН</strong></li>
+                <ul>
+                    <li>Права та  обов&rsquo;язки Виконавця:</li>
+                    <ul>
+                        <li>своєчасно надавати Послуги Замовнику з дотриманням умов  цього Договору;</li>
+                        <li>не поширювати отриману від Замовника або інших джерел  інформацію, що виходить за рамки умов цього Договору, в ході реалізації  Виконавцем своїх зобов'язань за цим Договором, згідно чинного законодавства  України;</li>
+                        <li>Виконавець має право консультувати Замовника по ходу  оформлення / підтвердження / оплати Замовлення на Послуги, в тому числі  самостійно зв'язуватися з Замовником за вказаними Замовником номерами  телефонів;</li>
+                        <li>Виконавець має право залучати до виконання цього Договору  третіх осіб, залишаючись відповідальним за їх дії (бездіяльності) перед  Замовником;</li>
+                        <li>Виконавець має право використовувати дані Замовника в  маркетингових цілях;</li>
+                        <li>Виконавець має право направляти Замовнику інформаційні та  рекламні повідомлення, як на адресу електронної пошти, так і за номером  мобільного телефону, відомості про яких містяться на Сайті. Цим Замовник дає  згоду на отримання подібної інформації;</li>
+                        <li>Сайт або його сервіси можуть бути в той чи інший час  частково або повністю недоступні унаслідок проведення профілактичних або інших  робіт або з будь-яких інших причин технічного характеру;</li>
+                        <li>Виконавець має право без роз&rsquo;яснення причин відмовити  Замовнику в надані Послуг. В разі якщо Замовником була внесена передоплата,  Виконавець зобов'язується або виконати Послуги з прибирання, або відмовитись  від виконання Послуги та повернути Замовнику сплачені ним кошти;</li>
+                        <li>в разі виявлення факту вчинення робітником Виконавця  правопорушення щодо Замовника або його майна, Виконавець зобов'язується надати  уповноваженим на проведення розслідування відповідних фактів правоохоронним  органам, будь-яку інформацію про робітника, яка є у розпорядженні Виконавця, а  також надати іншу посильну допомогу у відновленні прав потерпілого Замовника.</li>
+                    </ul>
+                    <li>Права та  обов&rsquo;язки Замовника:</li>
+                    <ul>
+                        <li>Замовник зобов'язується надавати достовірну і повну  інформацію при заповненні форм на Сайті;</li>
+                        <li>у разі якщо Замовнику не повністю зрозумілі будь-які  умови розміщення Замовлення на Послуги або виконання робіт, в тому числі,  порядок оплати, Замовник зобов'язується уточнити ці умови, а при неможливості  уточнення відмовитися від оформлення Замовлення на Послуги;</li>
+                        <li>Замовник має право на власний розсуд обирати спосіб  оплати робіт, з числа способів, запропонованих на Сайті або при оформленні  Замовлення на Послуги, при цьому клієнт зобов'язується самостійно ознайомитися  з правилами користування обраним їм способом платежу;</li>
+                        <li>Замовник має право відмовитись від виконання Оферти або  змінити час надання Послуг на умовах які були наданні для ознайомлення під час  оформлення Замовлення на Послуги.</li>
+                    </ul>
+                </ul>
+            </ul>
+            <p>Для відмови від Послуг з прибирання Замовник повинен повідомити Виконавця  про відмову від Послуг за 48 годин до їх виконання. В цьому випадку Виконавець  анулює завдання на надання Послуги з прибирання. В разі здійснення Замовником  передоплати, забезпечує повернення Замовнику відповідної суми грошових коштів.  Виконавець має право утримувати з передоплати Клієнта штраф за відмову від  Послуги, розмір якого залежить від часу з моменту відмови від Послуги до  встановленого часу початку надання Послуги, узгодженого з Замовником. У разі  відсутності передоплати Замовник також зобов'язаний оплатити суму штрафу.<br>
+                Для переносу часу початку надання Послуги Замовник повинен повідомити  Виконавця про перенесення часу початку надання Послуги за 24 години. В цьому  випадку Виконавець здійснює перенос часу надання Послуги.  Замовник зобов'язаний сплатити штраф, розмір  якого залежить від часу повідомлення Виконавця про перенесення початку надання  Послуги до узгодженого часу надання Послуги, зазначеного в замовленні  Замовником. Штраф за перенесення часу надання Послуги буде додано до суми  сплати за Послуги.<br>
+                У разі якщо повідомлення про відмову від надання Послуги направлено  Замовником після початку фактичного виконання Послуги, повернення грошових  коштів за відповідні роботи не проводиться. При відмові Замовника від надання  Послуги через неналежне виконання робітником Виконавця своїх обов'язків за  Договором, питання про повернення грошових коштів вирішується в претензійному  порядку, передбаченому цим Договором.</p>
+            <ul>
+                <ul>
+                    <ul>
+                        <li>Замовник зобов'язується оплатити Виконавцю, вартість  Послуг в повному обсязі.</li>
+                    </ul>
+                </ul>
+                <li><strong>ВІДПОВІДАЛЬНІСТЬ  СТОРІН</strong></li>
+                <ul>
+                    <li>У разі  невиконання або неналежного виконання однією із Сторін своїх зобов'язань згідно  з цим Договором, Сторони несуть відповідальність згідно з чинним законодавством  України.</li>
+                    <li>Виконавець  несе відповідальності за достовірність, точність, повноту або якість тільки  тієї інформації, яку він сам безпосередньо розмістив на Сайті.</li>
+                    <li>Сайт або  його елементи періодично можуть бути частково або повністю недоступні унаслідок  проведення профілактичних або інших робіт технічного характеру, що забезпечують  нормальне функціонування Сайту. В такому випадку Виконавець не несе зобов'язань  щодо повідомлення Замовників та/або відповідальності за неотримання ними  інформації.</li>
+                    <li>Виконавець  не гарантує, що:</li>
+                    <ul>
+                        <li>якість будь-якого продукту, робіт, послуг, інформації,  отриманих з використанням Сайту, буде відповідати очікуванням Замовника;</li>
+                        <li>Сайт буде працювати безперервно, швидко, надійно і без  помилок і буде відповідати очікуванням Замовника;</li>
+                        <li>всі помилки на Сайті будуть виправлені.</li>
+                    </ul>
+                    <li>Сайт може  містити посилання на інші Веб-сайти в мережі Інтернет (Веб-сайти третіх осіб).  Зазначені треті особи та їх контент не перевіряються Виконавцем на відповідність  тим або іншим вимогам (достовірності, повноти, законності і т.п.). Виконавець  не несе відповідальність за будь-яку інформацію, матеріали, розміщені на  Веб-сайтах третіх осіб, до яких Клієнт отримує доступ з використанням сервісів,  в тому числі, за будь-які думки або твердження, виражені на Веб-сайтах третіх  осіб, рекламу і т.п., а також за доступність таких Веб-сайтів або контенту і  наслідки їх використання Замовником.</li>
+                    <li>Посилання (в  будь-якій формі) на будь-який Веб-сайт, продукт, послугу, будь-яку інформацію  комерційного або некомерційного характеру, розміщена на Сайті, не є схваленням  або рекомендацією даних продуктів (послуг, діяльності) з боку Виконавця, за  винятком випадків, коли на це прямо вказується на Сайті.</li>
+                    <li>У разі  порушення Замовником умов Оферти Виконавець має право припинити надання Послуг  до моменту усунення Замовником допущених порушень та / або розірвати Оферту з  направленням відповідного повідомлення Замовникові за адресою електронної пошти  Замовника або юридичною адресою Замовника.</li>
+                </ul>
+                <li><strong>УМОВИ ТА  ПОРЯДОК НАДАННЯ ПОСЛУГ</strong></li>
+                <ul>
+                    <li>Згідно з  предметом даного Договору Виконавець надає обумовлені заздалегідь Послуги з  прибирання за бажанням Замовника.</li>
+                    <li>Замовник,  який бажає замовити Послуги, повинен ознайомитись з Регламентом виконання  прибирання, розміщеним на Сайті за адресою <a href="http://cleanlab.od.ua/">http://cleanlab.od.ua/</a>, умови спеціальних  пропозицій і акцій, якими Клієнт бажає скористатися.</li>
+                    <li>Для  отримання Послуги Замовник повинен здійснити наступні дії:</li>
+                    <ul>
+                        <li>обрати необхідні йому види Послуг на Сайті;</li>
+                        <li>внести необхідні відомості, в форми заявок передбачені на  сторінці Сайту <a href="http://cleanlab.od.ua/">http://cleanlab.od.ua/</a> (відомості повинні  відповідати дійсності і надаватися в необхідному обсязі);</li>
+                        <li>підтвердити коректність внесених відомостей і бажання  оформити Замовлення натисканням кнопки «Замовити» на Сайті.</li>
+                    </ul>
+                    <li>Після  затвердження об&rsquo;єму робіт та акцептування Замовлення на Послуги здійснити  оплату одним з запропонованих  форм оплати (готівка, банківська карта, за рахунком).</li>
+                    <li>У разі  внесення за Замовника платежу третіми особами повне право й обов'язки щодо  цього платежу виникають у Замовника, і такі дії третіх осіб розцінюються як  вчинені зазначеними третіми особами в інтересах Замовника і не породжують  будь-яких прав і обов'язків між зазначеними третіми особами і Виконавцем.</li>
+                    <li>Виконання  робіт здійснюється в обсязі та в терміни, передбачені в замовленні на Послуги.  При цьому строки закінчення робіт можуть бути змінені Виконавцем в  односторонньому порядку в залежності від фактичних обсягу і складності робіт.</li>
+                    <li>Моментом  оплати робіт є момент надходження належних Виконавцеві грошових коштів на  банківський рахунок Виконавця.</li>
+                </ul>
+                <li><strong>ТЕРМІН ДІЇ,  ЗМІНИ УМОВ ТА РОЗІРВАННЯ ДОГОВОРУ</strong></li>
+                <ul>
+                    <li>Договір діє  з моменту опублікування в мережі Інтернет на офіційному Сайті Виконавця <a href="http://cleanlab.od.ua/">http://cleanlab.od.ua/</a>, вступає в силу з  моменту акцептування Договору Замовником і діє до моменту виконання Виконавцем  Послуг згідно даного Договору.</li>
+                    <li>Цей Договір  публічно доводиться до відома усіх Замовників, шляхом його розміщення  (оприлюднення) на Сайті Виконавця.</li>
+                    <li>Виконавець  самостійно та на виконання вимог чинного законодавства України визначає умови  Договору. Виконавець самостійно має право змінити умови Договору з обов&rsquo;язковим  повідомленням про це Замовників на Сайті. У разі незгоди Замовника зі змінами,  внесеними до Договору, такий Замовник має право розірвати Договір, згідно з  порядком, викладеним в Договорі, протягом 7 (семи) календарних днів з дня, коли  він дізнався чи міг дізнатися про внесені зміни до Договору, шляхом направлення  чи особистого подання відповідної письмової заяви. Не розірвання Замовником  Договору у вказаний строк та продовження користування Послугами свідчить про  згоду Замовника зі змінами, внесеними до Договору.</li>
+                    <li>При внесенні  змін до цього Договору, Виконавець розміщує повідомлення про такі зміни на  своєму Сайті не менше ніж за 7 (семи) календарних днів до вступу змін в силу,  крім випадків, для яких Договором встановлений інший строк та/або порядок  повідомлення про внесення змін, а також випадків, у яких Виконавець не  зобов&rsquo;язаний повідомляти Замовника про внесення змін. При цьому Виконавець  гарантує та підтверджує, що розміщена на Сайті Виконавця поточна редакція  тексту цього Договору є дійсною.</li>
+                    <li>Виконавець  має право припинити дію цього Договору в односторонньому порядку, попередивши  шляхом розміщення оголошення про це на своєму Сайті не пізніше ніж за 7 (сім)  календарних днів до такого припинення.</li>
+                    <li>У випадку  припинення дії цього Договору у порядку, передбаченому п. 7.5 Договору,  Виконавець не звільняється від обов&rsquo;язку надати Послуги всім Замовникам, які  вже підписали заяви-приєднання та внесли оплату за Послуги, до відповідного  оприлюднення повідомлення про припинення дії цього Договору.</li>
+                    <li>При  розірванні Договору або припинення його терміну дії вся наявна в електронному  вигляді інформація Замовника зберігається у Виконавця протягом терміну,  регламентованого внутрішніми документами.</li>
+                    <li>Договір може  бути розірваний за згодою Сторін.</li>
+                </ul>
+                <li><strong>ГАРАНТІЇ</strong></li>
+                <ul>
+                    <li>За винятком  гарантій, прямо зазначених в тексті Договору, Виконавець не надає ніяких інших  прямих або непрямих гарантій.</li>
+                    <li>Вся надана у  зв'язку з виконанням Договору інформація є конфіденційною. Сторони  зобов'язуються не розголошувати її третім особам і не використовувати в  будь-яких цілях, не передбачених Договором.</li>
+                    <li>Погоджуючись  з умовами (приймаючи умови) цього Договору, Замовник запевняє Виконавця і  гарантує Виконавцю, що:</li>
+                    <ul>
+                        <li>у разі надання Замовником Виконавцю недостовірних даних  або матеріалів, Замовник несе повну відповідальність (в тому числі майнову) за  будь-які негативні наслідки, пов'язані з наданням Виконавцем Послуг за цим  Договором;</li>
+                        <li>Замовник укладає Договір добровільно, при цьому замовник  підтверджує:</li>
+                    </ul>
+                </ul>
+                <li>повністю розуміє значення і наслідки своїх дій щодо  укладення та виконання Договору;</li>
+                <li>повністю ознайомився з умовами Договору;</li>
+                <li>повністю розуміє предмет Договору.</li>
+                <ul>
+                    <ul>
+                        <li>Замовник має всі права і повноваження, необхідні для  укладення та виконання Договору Замовником.</li>
+                    </ul>
+                </ul>
+                <li><strong>ФОРС-МАЖОР</strong></li>
+                <ul>
+                    <li>Виконавець і  Замовник звільняються від невиконання або неналежного виконання своїх  обов'язків за Договором, якщо таке невиконання або неналежне виконання є  наслідком дії обставин непереборної сили (форс-мажору), які виникли після  укладення Договору, мають незвичайний характер, і що Виконавець і Замовник не  могли ні передбачити, ні подолати прийнятими засобами. До таких обставин  належать: повені, пожежа, землетрус, і інші природні явища, а також війна,  військові дії, страйки, акти або дії компетентних органів, органів державної  влади та будь-які інші подібні обставини, які знаходяться поза контролем  Сторін.</li>
+                    <li>Якщо  обставини форс-мажору тривають більше 3-х місяців, кожна зі Сторін має право  припинити дію цього Договору.</li>
+                </ul>
+                <li><strong>ІНШІ УМОВИ</strong></li>
+                <ul>
+                    <li>Укладаючи цей Договір, Замовник автоматично погоджується  з повним та безумовним прийняттям положень Договору і Тарифів, затверджених Виконавцем,  та інших умов надання Послуг, оприлюднених на Сайті.</li>
+                    <li>Цей Договір є публічним відповідно до статей 633, 641  Цивільного кодексу України і його умови однакові для всіх Замовників. Прийняття  умов цього Публічного договору (акцепт) є повним і беззастережним і означає  згоду Замовника з усіма умовами Договору без виключення і доповнення, а також  свідчить про те, що Замовник розуміє значення своїх дій, всі умови Договору  йому зрозумілі, Замовник не знаходиться під впливом помилки, обману,  насильства, загрози, тяжких обставин тощо.</li>
+                    <li>Оформивши (підписавши) заяву-приєднання до Договору,  Замовник надає дозвіл на збір та обробку його персональних даних для цілей,  пов&rsquo;язаних з наданням Послуг та в межах, визначених законодавством України.  Виконавець вправі здійснювати обробку персональних даних Заявників самостійно,  так і доручивши її розпоряднику бази персональних даних.</li>
+                </ul>
+                <li><strong>РЕКВІЗИТИ  ВИКОНАВЦЯ</strong></li>
+                <ul>
+                    <li><strong>Фізична  особа підприємець – Бондар Алла Василівна, </strong>що діє на підставі<strong> </strong>Свідоцтва  про державну реєстрацію фізичної особи-підприємця від 30 березня 2010р.,  реєстраційний номер <u>955793</u>, ідентифікаційний номер фізичної  особи-платника податків <u>2935623548</u>.</li>
+                </ul>
+            </ul>
+            <p class="text-right modal_close"><span>Закрыть</span></p>
+        </div>
+    </div>
+    <div id="modal-substrate" class="substrate"></div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/expand.js"></script>
+    <script src="/uForm/js/script.js"></script>
+</body>
+</html>

@@ -1,44 +1,41 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-a, a:hover {
-    text-decoration: none;
-    color: inherit;
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 button:focus {
-    outline: unset;
+  outline: unset;
 }
 body {
-    font-size: 16px;
-    line-height: 1.2em;
+  font-size: 16px;
+  line-height: 1.2em;
 }
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .bg-white {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .section-indent {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .btn {
-
 }
 
 .btn-orange {
-
 }
 
 .btn-gradientBlue {
-
 }
 
 .btn-gradientGrey {
-
 }
